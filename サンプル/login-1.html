@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>管理者ログイン</title>
+    <link rel="stylesheet" type="text/css" href="login-1.css" media="all" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+</head>
+<body>
+    <script type="text/javascript" src=""></script>
+<div id="form">
+    <p class="form-title">管理者ログイン</p>
+    <form action="#" method="post">
+        <p>ユーザー</p>
+        <input type="text"  name="name" class="name"/>
+        <p>Password</p>
+        <input type="password" name="password" class="password"/>
+    </form>
+    <input type="submit" class="submit" value="Login"/></p>
+</div>
+
+<script type="text/javascript">
+$(function(){
+
+let id = "user";
+let ps = "groupA";
+
+$('.submit').on("click",function(){
+let id1 = $('.name').val();
+let ps1 = $('.password').val();
+if(id==id1&&ps==ps1){
+
+location.href= "in.html";
+
+}else{
+
+alert("誤り！");
+}
+
+});
+});
+</script>
+
+
+</body>
+</html>

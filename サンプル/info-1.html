@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>社員情報</title>
+    <link rel="stylesheet" type="text/css" href="info-1.css" media="all" />
+</head>
+<body>
+    <div id="header">
+        <h2>社員番号 ID : 123456</h2>
+    </div>
+     
+    <div id="image">
+        <div class="faceimage">
+            <p>顔写真</p>
+            <img src="image/noimage01.png" name="faceimage" /></div>
+    </div>
+
+    <div id="main">
+        <form action="#" method="post" name="myfrom">
+        <p>社員番号ID</p>
+        <input type="text" required="required" name="number" size="40" />
+        <p>氏名</p>
+        <input type="text" required="required" name="name" size="40" />
+        <p>性別</p>
+        <input type="text" required="required" name="seibetu"size="40" />
+        <p>部署</p>
+        <input type="text" required="required" name="position"size="40" />
+        <p>生年月日</p>
+        <input type="date" required="required" value="0000/00/00" name="birthday"/>
+        <p>メールアドレス</p>
+        <input type="email" required="required"name="gmailaddress" size="50"/>
+        <p>電話番号</p>
+        <input type="tel" required="required" name="phonenumber" size="30"/>
+        <p>住所</p>
+        <input type="text" required="required" name="address" size="50"/>
+        <p>学歴</p>
+        <textarea rows="5" clos="50"  required="required" name="final education"></textarea>
+    
+    </div>
+     
+    <div id="footer">
+        <p class="kakuninn"><input type="submit" value="確認" name="kakuninn"></p>
+        <script>
+        document.myform.kakuninn.addEventListener('click', function() {
+            var result = window.confirm('送信しても宜しいですか？');
+            
+            if( result ) {
+         
+                //「true」の処理
+         
+            }
+            else {
+         
+                //「false」の処理
+         
+            }
+        })</script>
+        <p class="sakuzyo"><input type="submit" value="削除"name="sakuzyo" ></p>
+        </div>
+    </div>
+</from>
+</body>
+</html>

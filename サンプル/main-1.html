@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<!--idタグの名前(仮)headertとfooterは書き直す-->
+<head>
+    <meta charset="utf-8">
+    <title>社員一覧</title>
+    <link rel="stylesheet" type="text/css" href="main-1.css" media="all" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+<div id="header">
+    <p>社員情報一覧</p>
+    <!--ログインした時間を表示できたらするJavascript-->
+</div>
+ 
+<div id="search">
+  <script type="text/javascript" src="sample.js"></script>
+  <!--検索-->
+  <form action="cgi-bin/example.cgi" method="post">
+  <input type="search" name="search"　placeholder="キーワード入力">
+  <input type="submit" name="submit" value="検索">
+<!--絞りこみ-->
+<div class="search-area">
+  <script src="js/search.js"></script>
+    <form method="get" action="">
+      <select id="seibetu" name="">
+        <option value="">性別
+        <option value="男">男
+        <option value="女">女
+      </select>
+      <select id="birth" name="">
+        <option value="">誕生月を選んでください
+        <option value="/01/">1月
+        <option value="/02/">2月
+        <option value="/03/">3月
+        <option value="/04/">4月
+        <option value="/05/">5月
+        <option value="/06/">6月
+        <option value="/07/">7月
+        <option value="/08/">8月
+        <option value="/09/">9月
+        <option value="/10/">10月
+        <option value="/11/">11月
+        <option value="/12/">12月
+      </select>
+      <input type="button" value="絞り込む" id="button">
+      <input type="button" value="すべて表示" id="button2">
+    </form>
+  </div>
+  
+</form>
+-昇順降順
+</div>
+ 
+<table id="deta">
+    <thead>
+        <tr>
+          <th>社員ID</th>
+          <th>名前</th>
+          <th>性別</th>
+          <th>部署</th>
+          <th>生年月日</th>
+          <th>mail</th>
+          <th>電話番号</th>
+          <th>住所</th>
+          <th>学歴</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="number">111</td>
+          <td class="name">aaa</td>
+          <td class="seibetu">女</td>
+          <td class="position">営業</td>
+          <td>0000/01/00</td>
+          <td class="gmail">000000@000.00</td>
+          <td class="tel">000-0000-0000</td>
+          <td class="address">0000県00市0000000</td>
+          <td class="final education">00000000卒業</td>
+          <td><a href="#" class="hensyuu1">
+            編集
+        </a></td>
+        </tr>
+        
+        <tr>
+          <td class="number">222</td>
+          <td class="name">bbb</td>
+          <td class="seibetu">女</td>
+          <td class="position">管理</td>
+          <td>0000/02/02</td>
+          <td class="gmail">000000@000.00</td>
+          <td class="tel">000-0000-0000</td>
+          <td class="address">0000県00市0000000</td>
+          <td class="final education">00000000卒業</td>
+          <td><a href="#" class="hensyuu1">
+            編集
+        </a></td>
+        </tr>
+        <tr>
+          <td class="number">333</td>
+          <td class="name">ccc</td>
+          <td class="seibetu">男</td>
+          <td class="position">営業</td>
+          <td>0000/03/03</td>
+          <td class="gmail">000000@000.00</td>
+          <td class="tel">000-0000-0000</td>
+          <td class="address">0000県00市0000000</td>
+          <td class="final education">00000000卒業</td>
+          <td><a href="#" class="hensyuu1">
+            編集
+        </a></td>
+        </tr>
+
+
+        </tbody>
+</table>
+
+<div id="footer">
+ 
+</div>
+</body>
+</html>
